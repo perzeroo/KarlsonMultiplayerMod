@@ -3,19 +3,22 @@ using System.Linq;
 using KarlsonMultiplayer.Multiplayer.Server;
 using RiptideNetworking;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace KarlsonMultiplayer
 {
     public enum ServerToClientId : ushort
     {
-        spawnPlayer = 3,
-        playerPosition,
+        spawnPlayer = 4,
+        playerPosRot,
+        playerScene,
     }
 
     public enum ClientToServerId : ushort
     {
         playerName = 1,
-        position,
+        playerPosRot,
+        loadScene,
     }
     
     public class ClientNetworkManager : MonoBehaviour
@@ -31,7 +34,7 @@ namespace KarlsonMultiplayer
                     _singleton = value;
                 else if (_singleton != value)
                 {
-                    Main.instance.log.LogWarning("NetworkManager instance already exists");
+                    UnityEngine.Debug.Log("NetworkManager instance already exists");
                     Destroy(value);
                 }
             }
@@ -74,14 +77,18 @@ namespace KarlsonMultiplayer
 
         public void Connect()
         {
-            Client.Connect(ip, port, 1000, 2);
+            Client.Connect(ip, port);
         }
 
         private void DidConnect(object sender, EventArgs e)
         {
-            Message message = Message.Create(MessageSendMode.reliable, (ushort)ClientToServerId.playerName);
-            message.Add("test");
-            Client.Send(message);
+            Message name = Message.Create(MessageSendMode.reliable, (ushort)ClientToServerId.playerName);
+            name.Add(Environment.MachineName);
+            Client.Send(name);
+
+            Message scene = Message.Create(MessageSendMode.reliable, (ushort) ClientToServerId.loadScene);
+            scene.Add(SceneManager.GetActiveScene().name);
+            Client.Send(scene);
         }
 
         private void FailedToConnect(object sender, EventArgs e)
@@ -96,7 +103,7 @@ namespace KarlsonMultiplayer
 
         private void DidDisconnect(object sender, EventArgs e)
         {
-            Main.instance.log.LogDebug("Disconnected");
+            UnityEngine.Debug.Log("Disconnected");
         }
     }
 
@@ -113,7 +120,7 @@ namespace KarlsonMultiplayer
                     _singleton = value;
                 else if (_singleton != value)
                 {
-                    Main.instance.log.LogWarning("NetworkManager instance already exists");
+                    UnityEngine.Debug.Log("NetworkManager instance already exists");
                     Destroy(value);
                 }
             }
@@ -159,6 +166,7 @@ namespace KarlsonMultiplayer
             foreach (var player in Player.List.Values.Where(player => player.id != e.Client.Id))
             {
                 player.SendSpawn(e.Client);
+                player.SendScene(e.Client);
             }
         }
 

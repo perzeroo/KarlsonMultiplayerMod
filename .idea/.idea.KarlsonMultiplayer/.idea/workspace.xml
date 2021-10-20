@@ -12,6 +12,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F4DD6ABB-CD77-4768-BBF0-6F1CFA0BDA0E/93/04147cec/Timer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/Message.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23C82CAD-A617-4AEE-A1F2-659206CAB34D/d2/cad85fc1/ManualLogSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86C03A06-2ADC-4935-BA17-5D49FD701C85/dd/24005d9f/Material.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7F26C0A7-4C5B-43C2-A5FC-5EFD29EC63D6/7b/a0868e97/Harmony.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4544F9BB-C480-4FC4-BCF9-89F238D63690/6c/dc8bf440/HeaderType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86C03A06-2ADC-4935-BA17-5D49FD701C85/16/b17bc193/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/RudpSocket.cs" root0="SKIP_HIGHLIGHTING" />
@@ -36,10 +38,13 @@
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/ServerNetworkManager.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/MessageExtensions.cs" />
         <option value="$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/Client.cs" />
-        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Main.cs" />
-        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/NetworkManager.cs" />
-        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Player.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Harmony/Harmony.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Harmony/Patches.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Patches.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/Player.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Main.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Player.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/NetworkManager.cs" />
       </list>
     </option>
   </component>
@@ -84,7 +89,7 @@
       <updated>1634629052967</updated>
       <workItem from="1634629059466" duration="5995000" />
       <workItem from="1634635670512" duration="10071000" />
-      <workItem from="1634655549832" duration="10281000" />
+      <workItem from="1634655549832" duration="30066000" />
     </task>
     <servers />
   </component>
@@ -105,5 +110,9 @@
       <screen x="0" y="0" width="3072" height="1698" />
     </state>
     <state x="1045" y="494" key="SettingsEditor/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634647354066" />
+    <state x="1219" y="424" width="634" height="849" key="find.popup" timestamp="1634666231646">
+      <screen x="0" y="0" width="3072" height="1698" />
+    </state>
+    <state x="1219" y="424" width="634" height="849" key="find.popup/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634666231646" />
   </component>
 </project>

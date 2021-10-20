@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Reflection;
 using BepInEx;
-using BepInEx.Logging;
+using HarmonyLib;
 using KarlsonMultiplayer.Multiplayer;
 using RiptideNetworking;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace KarlsonMultiplayer
 {
@@ -12,43 +14,49 @@ namespace KarlsonMultiplayer
     {
         public static Main instance;
 
-        public ManualLogSource log;
+        public static Harmony harmony;
 
-        private GameObject clientGameObject = new GameObject("ClientNetworkManager");
-        private GameObject serverGameObject = new GameObject("ServerNetworkManager");
+        private readonly GameObject clientGameObject = new GameObject("ClientNetworkManager");
         private GameObject clientNetworkObject;
+
+        private string ip = "127.0.0.1";
+        private string port = "8001";
+        private readonly GameObject serverGameObject = new GameObject("ServerNetworkManager");
         private GameObject serverNetworkObject;
 
         private void Awake()
         {
             instance = this;
 
-            log = new ManualLogSource("KarlsonMultiplayer");
+            harmony = new Harmony("me.p3rz3r0.karlsonmultiplayer");
+
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
 
         private void Start()
         {
             RiptideLogger.Initialize(UnityEngine.Debug.Log, true);
-            
+
             clientNetworkObject = Instantiate(clientGameObject, Vector3.zero, Quaternion.identity);
             clientNetworkObject.AddComponent<ClientNetworkManager>();
 
             serverNetworkObject = Instantiate(serverGameObject, Vector3.zero, Quaternion.identity);
             serverNetworkObject.AddComponent<ServerNetworkManager>();
-            
+
             DontDestroyOnLoad(clientNetworkObject);
             DontDestroyOnLoad(serverNetworkObject);
         }
 
         private void FixedUpdate()
         {
-            Message message = Message.Create(MessageSendMode.reliable, (ushort) ClientToServerId.position);
+            if (PlayerMovement.Instance)
+            {
+                var message = Message.Create(MessageSendMode.unreliable, (ushort) ClientToServerId.playerPosRot);
                 message.Add(PlayerMovement.Instance.transform.position);
+                message.Add(PlayerMovement.Instance.orientation.rotation);
                 ClientNetworkManager.Singleton.Client.Send(message);
+            }
         }
-
-        private string ip = "127.0.0.1";
-        private string port = "8001";
 
         private void OnGUI()
         {
@@ -59,20 +67,14 @@ namespace KarlsonMultiplayer
             ClientNetworkManager.Singleton.port = ushort.Parse(port);
             ServerNetworkManager.Singleton.port = ushort.Parse(port);
 
-            if (GUILayout.Button("Connect"))
-            {
-                ClientNetworkManager.Singleton.Connect();
-            }
+            if (GUILayout.Button("Connect")) ClientNetworkManager.Singleton.Connect();
 
-            if (GUILayout.Button("Create Server"))
-            {
-                ServerNetworkManager.Singleton.StartServer();
-            }
+            if (GUILayout.Button("Create Server")) ServerNetworkManager.Singleton.StartServer();
         }
 
         public GameObject SpawnObject(GameObject obj)
         {
-            GameObject go = Instantiate(obj);
+            var go = Instantiate(obj);
             DontDestroyOnLoad(go);
             return go;
         }
@@ -80,6 +82,19 @@ namespace KarlsonMultiplayer
         public void DestroyObject(GameObject obj)
         {
             Destroy(obj);
+        }
+    }
+    
+    [HarmonyPatch(typeof(Lobby), "LoadMap")]
+    class LobbyPatch
+    {
+        [HarmonyPostfix]
+        static void PostLoadMap(string s)
+        {
+            UnityEngine.Debug.Log(s);
+            Message message = Message.Create(MessageSendMode.reliable, (ushort)ClientToServerId.loadScene);
+            message.Add(s);
+            ClientNetworkManager.Singleton.Client.Send(message);
         }
     }
 }
