@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\p3rz3r0\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\p3rz3r0\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_KarlsonMultiplayer.914442623.00" t="ExcludeRecursive" />
+    <e p="C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer" t="IncludeFlat">
+      <e p="KarlsonMultiplayer" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="KarlsonMultiplayer.csproj" t="IncludeRecursive" />
+        <e p="Main.cs" t="Include" />
+        <e p="Multiplayer" t="Include">
+          <e p="Client" t="Include">
+            <e p="Player.cs" t="Include" />
+          </e>
+          <e p="MessageExtensions.cs" t="Include" />
+          <e p="NetworkManager.cs" t="Include" />
+          <e p="Server" t="Include">
+            <e p="Player.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net48" t="Include">
+              <e p="KarlsonMultiplayer.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="KarlsonMultiplayer.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

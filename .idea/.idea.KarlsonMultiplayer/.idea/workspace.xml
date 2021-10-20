@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56bc64de-ec3d-43e8-94c8-22471ea7cd85" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/Server.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F4DD6ABB-CD77-4768-BBF0-6F1CFA0BDA0E/93/04147cec/Timer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/Message.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23C82CAD-A617-4AEE-A1F2-659206CAB34D/d2/cad85fc1/ManualLogSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4544F9BB-C480-4FC4-BCF9-89F238D63690/6c/dc8bf440/HeaderType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86C03A06-2ADC-4935-BA17-5D49FD701C85/16/b17bc193/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/RudpSocket.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/Client.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Class1.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Riptide/EventArgs.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Riptide/Lockables.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Riptide/Message.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Riptide/MessageHandlerAttribute.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Riptide/RiptideLogger.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Riptide/RudpSocket.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Riptide/ActionQueue.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Riptide/ServerClient.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Riptide/Rudp.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Riptide/Server.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Riptide/Client.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/ClientNetworkManager.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/ServerNetworkManager.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/MessageExtensions.cs" />
+        <option value="$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/Client.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Main.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/NetworkManager.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Player.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/Player.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ziRic9RE1Q3xMiN7OgDw0Yb5Lh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56bc64de-ec3d-43e8-94c8-22471ea7cd85" name="Default Changelist" comment="" />
+      <created>1634629052967</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634629052967</updated>
+      <workItem from="1634629059466" duration="5995000" />
+      <workItem from="1634635670512" duration="10071000" />
+      <workItem from="1634655549832" duration="10281000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1129" y="581" key="Rider.ProjectTemplateDialog.Size" timestamp="1634647415559">
+      <screen x="0" y="0" width="3072" height="1698" />
+    </state>
+    <state x="1129" y="581" key="Rider.ProjectTemplateDialog.Size/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634647415559" />
+    <state x="1045" y="494" key="SettingsEditor" timestamp="1634647354066">
+      <screen x="0" y="0" width="3072" height="1698" />
+    </state>
+    <state x="1045" y="494" key="SettingsEditor/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634647354066" />
+  </component>
+</project>

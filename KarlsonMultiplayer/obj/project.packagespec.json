@@ -1,0 +1,31 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\p3rz3r0\\RiderProjects\\KarlsonMultiplayer\\KarlsonMultiplayer\\KarlsonMultiplayer.csproj",
+    "projectName": "KarlsonMultiplayer",
+    "projectPath": "C:\\Users\\p3rz3r0\\RiderProjects\\KarlsonMultiplayer\\KarlsonMultiplayer\\KarlsonMultiplayer.csproj",
+    "outputPath": "C:\\Users\\p3rz3r0\\RiderProjects\\KarlsonMultiplayer\\KarlsonMultiplayer\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "net48"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "net48": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "net48": {
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+    }
+  }
+}

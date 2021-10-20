@@ -1,0 +1,45 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\p3rz3r0\\RiderProjects\\KarlsonMultiplayer\\KarlsonMultiplayer\\KarlsonMultiplayer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\p3rz3r0\\RiderProjects\\KarlsonMultiplayer\\KarlsonMultiplayer\\KarlsonMultiplayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\p3rz3r0\\RiderProjects\\KarlsonMultiplayer\\KarlsonMultiplayer\\KarlsonMultiplayer.csproj",
+        "projectName": "KarlsonMultiplayer",
+        "projectPath": "C:\\Users\\p3rz3r0\\RiderProjects\\KarlsonMultiplayer\\KarlsonMultiplayer\\KarlsonMultiplayer.csproj",
+        "packagesPath": "C:\\Users\\p3rz3r0\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\p3rz3r0\\RiderProjects\\KarlsonMultiplayer\\KarlsonMultiplayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\p3rz3r0\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
