@@ -20,26 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56bc64de-ec3d-43e8-94c8-22471ea7cd85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/Handlers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/PlayerManagers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KarlsonMultiplayer/UI/UI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.KarlsonMultiplayer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KarlsonMultiplayer/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.KarlsonMultiplayer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KarlsonMultiplayer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/KarlsonMultiplayer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/KarlsonMultiplayer.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/ClientPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/NetworkManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/ServerPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/KarlsonMultiplayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/KarlsonMultiplayer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/RiptideNetworking.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/RiptideNetworking.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/RiptideNetworking.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/RiptideNetworking.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/RiptideNetworking.xml" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/RiptideNetworking.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/Message.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7F26C0A7-4C5B-43C2-A5FC-5EFD29EC63D6/7b/a0868e97/Harmony.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4544F9BB-C480-4FC4-BCF9-89F238D63690/6c/dc8bf440/HeaderType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86C03A06-2ADC-4935-BA17-5D49FD701C85/08/71bf3c97/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5B303D5A-F544-401C-99C1-3DA17B472810/9b/934fb2fd/InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86C03A06-2ADC-4935-BA17-5D49FD701C85/e7/c8b79e20/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/995DFDBD-E1CD-400B-889D-70B872BAAAF8/ae/d4df93d7/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
@@ -154,7 +136,7 @@
       <workItem from="1634635670512" duration="10071000" />
       <workItem from="1634655549832" duration="31627000" />
       <workItem from="1634733138901" duration="16118000" />
-      <workItem from="1634796942664" duration="25871000" />
+      <workItem from="1634796942664" duration="26340000" />
     </task>
     <servers />
   </component>

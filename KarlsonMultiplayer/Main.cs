@@ -27,7 +27,6 @@ namespace KarlsonMultiplayer
         private GameObject serverNetworkObject;
 
         public string currentWeapon = "none";
-        public string lastScene = "MainMenu";
         
         private readonly GameObject uiManagerObject = new GameObject("UIManager");
         private GameObject uiManager;
@@ -43,6 +42,8 @@ namespace KarlsonMultiplayer
 
         private void Start()
         {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+            
             RiptideLogger.Initialize(UnityEngine.Debug.Log, true);
 
             clientNetworkObject = Instantiate(clientGameObject, Vector3.zero, Quaternion.identity);
@@ -59,6 +60,19 @@ namespace KarlsonMultiplayer
             DontDestroyOnLoad(uiManager);
         }
 
+        public static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            UnityEngine.Debug.Log("Changing Scenes... Current Scene: " + scene.name);
+            
+            Message message = Message.Create(MessageSendMode.reliable, (ushort)ClientToServerId.loadScene);
+            message.Add(scene.name);
+            ClientNetworkManager.Singleton.Client.Send(message);
+
+            Message unequip = Message.Create(MessageSendMode.reliable, (ushort) ClientToServerId.playerPickup);
+            unequip.Add("none");
+            ClientNetworkManager.Singleton.Client.Send(unequip);
+        }
+        
         private void FixedUpdate()
         {
             if (PlayerMovement.Instance)
@@ -70,28 +84,12 @@ namespace KarlsonMultiplayer
                     SendWeaponData();
                 }
             }
-            
-            if (!SceneManager.GetActiveScene().name.Equals(lastScene))
-            {
-                UnityEngine.Debug.Log("Changed scene from " + lastScene + " to " + SceneManager.GetActiveScene().name);
-                    
-                Message message = Message.Create(MessageSendMode.reliable, (ushort)ClientToServerId.loadScene);
-                message.Add(SceneManager.GetActiveScene().name);
-                ClientNetworkManager.Singleton.Client.Send(message);
-
-                Message unequip = Message.Create(MessageSendMode.reliable, (ushort) ClientToServerId.playerPickup);
-                unequip.Add("none");
-                ClientNetworkManager.Singleton.Client.Send(unequip);
-
-                lastScene = SceneManager.GetActiveScene().name;
-            }
         }
 
         private void Update()
         {
             foreach (var player in ClientPlayerManager.List)
             {
-                
                 player.Value.LerpPosition();
             }
         }
@@ -164,7 +162,7 @@ namespace KarlsonMultiplayer
                 Message message = Message.Create(MessageSendMode.reliable, (ushort) ClientToServerId.playerPickup);
                 message.Add(gunNameStripped[0]);
                 ClientNetworkManager.Singleton.Client.Send(message);
-                UnityEngine.Debug.Log(gunNameStripped[0]);
+                UnityEngine.Debug.Log("Changing guns... current gun: " + gunNameStripped[0]);
             }
             catch (NullReferenceException)
             {
