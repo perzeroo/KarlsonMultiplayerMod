@@ -2,6 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>net48</TargetFramework>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 
     <ItemGroup>
@@ -18,7 +19,7 @@
         <HintPath>..\..\..\Development\Unity\BepInEx 5.4.17\BepInEx.Harmony.dll</HintPath>
       </Reference>
       <Reference Include="RiptideNetworking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\RiptideNetworking\RiptideNetworking\RiptideNetworking\bin\Debug\netstandard2.0\net48\RiptideNetworking.dll</HintPath>
+        <HintPath>..\..\RiptideNetworking-BepInEx\RiptideNetworking\RiptideNetworking\bin\Debug\netstandard2.0\net48\RiptideNetworking.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>..\..\..\Development\Unity\Karlson\UnityEngine.dll</HintPath>
@@ -28,6 +29,9 @@
       </Reference>
       <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>..\..\..\Development\Unity\Karlson\UnityEngine.IMGUIModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\Development\Unity\Karlson\UnityEngine.InputLegacyModule.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>..\..\..\Development\Unity\Karlson\UnityEngine.PhysicsModule.dll</HintPath>

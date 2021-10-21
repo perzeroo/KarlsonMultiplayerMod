@@ -22,3 +22,4 @@ C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\n
 C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\UnityEngine.PhysicsModule.dll
 C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\UnityEngine.TextCoreModule.dll
 C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\UnityEngine.TextRenderingModule.dll
+C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\UnityEngine.InputLegacyModule.dll

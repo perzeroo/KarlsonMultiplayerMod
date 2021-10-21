@@ -10,12 +10,16 @@
         <e p="Main.cs" t="Include" />
         <e p="Multiplayer" t="Include">
           <e p="Client" t="Include">
-            <e p="Player.cs" t="Include" />
+            <e p="ClientPlayer.cs" t="Include" />
           </e>
           <e p="MessageExtensions.cs" t="Include" />
           <e p="NetworkManager.cs" t="Include" />
           <e p="Server" t="Include">
-            <e p="Player.cs" t="Include" />
+            <e p="ServerPlayer.cs" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="Handlers.cs" t="Include" />
+            <e p="PlayerManagers.cs" t="Include" />
           </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -24,6 +28,9 @@
               <e p="KarlsonMultiplayer.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="UI" t="Include">
+          <e p="UI.cs" t="Include" />
         </e>
       </e>
       <e p="KarlsonMultiplayer.sln" t="IncludeFlat" />

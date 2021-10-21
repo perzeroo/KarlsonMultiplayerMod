@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using KarlsonMultiplayer.Multiplayer.Server;
+using KarlsonMultiplayer.Shared;
 using RiptideNetworking;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,9 +9,14 @@ namespace KarlsonMultiplayer
 {
     public enum ServerToClientId : ushort
     {
-        spawnPlayer = 4,
+        spawnPlayer = 7,
         playerPosRot,
         playerScene,
+        playerPickup,
+        weaponPosition,
+        weaponShoot,
+        chatMessage,
+        playerCrouchState,
     }
 
     public enum ClientToServerId : ushort
@@ -19,6 +24,11 @@ namespace KarlsonMultiplayer
         playerName = 1,
         playerPosRot,
         loadScene,
+        playerPickup,
+        weaponPosition,
+        weaponShoot,
+        sendChatMessage,
+        playerCrouchState,
     }
     
     public class ClientNetworkManager : MonoBehaviour
@@ -89,6 +99,15 @@ namespace KarlsonMultiplayer
             Message scene = Message.Create(MessageSendMode.reliable, (ushort) ClientToServerId.loadScene);
             scene.Add(SceneManager.GetActiveScene().name);
             Client.Send(scene);
+            
+            Message weapon = Message.Create(MessageSendMode.reliable, (ushort) ClientToServerId.playerPickup);
+            scene.Add(Main.instance.currentWeapon);
+            Client.Send(weapon);
+            
+            if(!PlayerMovement.Instance) return;
+            Message crouch = Message.Create(MessageSendMode.reliable, (ushort) ClientToServerId.playerCrouchState);
+            scene.Add(PlayerMovement.Instance.crouching);
+            Client.Send(crouch);
         }
 
         private void FailedToConnect(object sender, EventArgs e)
@@ -98,7 +117,7 @@ namespace KarlsonMultiplayer
 
         private void PlayerLeft(object sender, ClientDisconnectedEventArgs e)
         {
-            Multiplayer.Client.Player.list[e.Id].RemovePlayer();
+            ClientPlayerManager.List[e.Id].RemovePlayer();
         }
 
         private void DidDisconnect(object sender, EventArgs e)
@@ -163,16 +182,18 @@ namespace KarlsonMultiplayer
 
         private void NewPlayerConnected(object sender, ServerClientConnectedEventArgs e)
         {
-            foreach (var player in Player.List.Values.Where(player => player.id != e.Client.Id))
+            foreach (var player in ServerPlayerManager.List.Values.Where(player => player.id != e.Client.Id))
             {
                 player.SendSpawn(e.Client);
                 player.SendScene(e.Client);
+                player.SendCurrentWeapon(e.Client);
+                player.SendCrouchState(e.Client);
             }
         }
 
         private void PlayerLeft(object sender, ClientDisconnectedEventArgs e)
         {
-            Player.List.Remove(e.Id);
+            ServerPlayerManager.List.Remove(e.Id);
         }
     }
 }
