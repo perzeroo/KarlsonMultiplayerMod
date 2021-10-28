@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using KarlsonMultiplayer.Shared;
 using RiptideNetworking;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,7 +8,7 @@ namespace KarlsonMultiplayer
 {
     public enum ServerToClientId : ushort
     {
-        spawnPlayer = 7,
+        spawnPlayer = 9,
         playerPosRot,
         playerScene,
         playerPickup,
@@ -17,6 +16,7 @@ namespace KarlsonMultiplayer
         weaponShoot,
         chatMessage,
         playerCrouchState,
+        playerVelocity,
     }
 
     public enum ClientToServerId : ushort
@@ -52,6 +52,7 @@ namespace KarlsonMultiplayer
 
         public string ip;
         public ushort port;
+        public string name;
 
         public Client Client { get; private set; }
 
@@ -93,7 +94,7 @@ namespace KarlsonMultiplayer
         private void DidConnect(object sender, EventArgs e)
         {
             Message name = Message.Create(MessageSendMode.reliable, (ushort)ClientToServerId.playerName);
-            name.Add(Environment.MachineName);
+            name.Add(this.name);
             Client.Send(name);
 
             Message scene = Message.Create(MessageSendMode.reliable, (ushort) ClientToServerId.loadScene);
@@ -123,6 +124,7 @@ namespace KarlsonMultiplayer
         private void DidDisconnect(object sender, EventArgs e)
         {
             UnityEngine.Debug.Log("Disconnected");
+            ClientPlayerManager.List.Clear();
         }
     }
 

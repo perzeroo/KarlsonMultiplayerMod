@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using HarmonyLib;
+using RiptideNetworking;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -100,10 +101,6 @@ namespace KarlsonMultiplayer.UI
             if (Input.GetKey(KeyCode.T))
             {
                 inputFieldGO.SetActive(true);
-
-                // EventSystem current;
-                // (current = EventSystem.current).SetSelectedGameObject(inputField.gameObject, null);
-                // inputField.OnPointerClick(new PointerEventData(current));
                 inputField.ActivateInputField();
             }
 
@@ -112,6 +109,13 @@ namespace KarlsonMultiplayer.UI
                 if (inputFieldGO.activeInHierarchy)
                 {
                     UnityEngine.Debug.Log(inputField.text);
+
+                    Message message = Message.Create(MessageSendMode.reliable,
+                        (ushort) ClientToServerId.sendChatMessage);
+
+                    message.Add(inputField.text);
+                    
+                    ClientNetworkManager.Singleton.Client.Send(message);
                     
                     inputFieldGO.SetActive(false);
                     inputField.text = "Press T to type in chat";

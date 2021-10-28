@@ -20,7 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56bc64de-ec3d-43e8-94c8-22471ea7cd85" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/PrefabManagerMP.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Command/Command.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Command/CommandManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Command/Commands/ChangeVelocity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.KarlsonMultiplayer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KarlsonMultiplayer/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.KarlsonMultiplayer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KarlsonMultiplayer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/ClientPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/ClientPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/MessageExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/MessageExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/NetworkManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/ServerPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/ServerPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/Handlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/Handlers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/PlayerManagers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/PlayerManagers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/UI/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/UI/UI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/KarlsonMultiplayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/KarlsonMultiplayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/KarlsonMultiplayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/KarlsonMultiplayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +53,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F4DD6ABB-CD77-4768-BBF0-6F1CFA0BDA0E/8e/40a0331b/RangedWeapon.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A6C194-5F57-4474-95FC-AD42118554C7/fb/710c04fd/Stopwatch.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/Server.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../RiptideNetworking-BepInEx/RiptideNetworking/RiptideNetworking/Server.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/Message.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7F26C0A7-4C5B-43C2-A5FC-5EFD29EC63D6/7b/a0868e97/Harmony.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4544F9BB-C480-4FC4-BCF9-89F238D63690/6c/dc8bf440/HeaderType.cs" root0="SKIP_HIGHLIGHTING" />
@@ -42,6 +62,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86C03A06-2ADC-4935-BA17-5D49FD701C85/e7/c8b79e20/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/995DFDBD-E1CD-400B-889D-70B872BAAAF8/ae/d4df93d7/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F4DD6ABB-CD77-4768-BBF0-6F1CFA0BDA0E/93/04147cec/Timer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F2625FD8-44AA-4DD5-B6A3-882F24F14D79/30/d867ec52/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23C82CAD-A617-4AEE-A1F2-659206CAB34D/d2/cad85fc1/ManualLogSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86C03A06-2ADC-4935-BA17-5D49FD701C85/dd/24005d9f/Material.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86C03A06-2ADC-4935-BA17-5D49FD701C85/16/b17bc193/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
@@ -65,23 +86,28 @@
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/Riptide/Client.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/ClientNetworkManager.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/ServerNetworkManager.cs" />
-        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/MessageExtensions.cs" />
         <option value="$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/Client.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/Harmony/Harmony.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/Harmony/Patches.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/Patches.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/Player.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Player.cs" />
-        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/PlayerManagers.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/UI/UIFactory.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/UI/UIManager.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/UI/Pool.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/UI/Chat.cs" />
-        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/ServerPlayer.cs" />
-        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/NetworkManager.cs" />
-        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/Handlers.cs" />
-        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/ClientPlayer.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/UI/UI.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/PrefabManager.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/PrefabManagerMP.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/NetworkManager.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/ClientPlayer.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/ServerPlayer.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Command/Command.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Command/Commands/ChangeVelocity.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Command/CommandManager.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/Handlers.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/PlayerManagers.cs" />
+        <option value="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/MessageExtensions.cs" />
         <option value="$PROJECT_DIR$/KarlsonMultiplayer/Main.cs" />
       </list>
     </option>
@@ -95,7 +121,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -136,7 +162,8 @@
       <workItem from="1634635670512" duration="10071000" />
       <workItem from="1634655549832" duration="31627000" />
       <workItem from="1634733138901" duration="16118000" />
-      <workItem from="1634796942664" duration="26340000" />
+      <workItem from="1634796942664" duration="27441000" />
+      <workItem from="1634904100163" duration="25636000" />
     </task>
     <servers />
   </component>
@@ -165,25 +192,25 @@
       <screen x="0" y="0" width="3072" height="1698" />
     </state>
     <state x="991" y="504" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634749228638" />
-    <state x="1129" y="581" key="Rider.ProjectTemplateDialog.Size" timestamp="1634647415559">
+    <state x="1129" y="581" key="Rider.ProjectTemplateDialog.Size" timestamp="1634999188546">
       <screen x="0" y="0" width="3072" height="1698" />
     </state>
-    <state x="1129" y="581" key="Rider.ProjectTemplateDialog.Size/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634647415559" />
-    <state x="1045" y="494" key="SettingsEditor" timestamp="1634798288682">
+    <state x="1129" y="581" key="Rider.ProjectTemplateDialog.Size/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634999188546" />
+    <state x="1045" y="494" key="SettingsEditor" timestamp="1634904134451">
       <screen x="0" y="0" width="3072" height="1698" />
     </state>
-    <state x="1045" y="494" key="SettingsEditor/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634798288682" />
-    <state x="1219" y="424" width="634" height="849" key="find.popup" timestamp="1634666231646">
+    <state x="1045" y="494" key="SettingsEditor/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634904134451" />
+    <state x="1219" y="424" width="634" height="849" key="find.popup" timestamp="1634986290195">
       <screen x="0" y="0" width="3072" height="1698" />
     </state>
-    <state x="1219" y="424" width="634" height="849" key="find.popup/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634666231646" />
+    <state x="1219" y="424" width="634" height="849" key="find.popup/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634986290195" />
     <state x="1193" y="405" key="run.anything.popup" timestamp="1634749095516">
       <screen x="0" y="0" width="3072" height="1698" />
     </state>
     <state x="1193" y="405" key="run.anything.popup/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634749095516" />
-    <state x="1199" y="390" width="672" height="678" key="search.everywhere.popup" timestamp="1634812258061">
+    <state x="1199" y="390" width="672" height="678" key="search.everywhere.popup" timestamp="1634922826610">
       <screen x="0" y="0" width="3072" height="1698" />
     </state>
-    <state x="1199" y="390" width="672" height="678" key="search.everywhere.popup/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634812258061" />
+    <state x="1199" y="390" width="672" height="678" key="search.everywhere.popup/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634922826610" />
   </component>
 </project>

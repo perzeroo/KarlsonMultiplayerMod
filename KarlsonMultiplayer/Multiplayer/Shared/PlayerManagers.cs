@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
-using KarlsonMultiplayer.Multiplayer.Client;
-using KarlsonMultiplayer.Multiplayer.Server;
 using RiptideNetworking;
 using UnityEngine;
 
-namespace KarlsonMultiplayer.Shared
+namespace KarlsonMultiplayer
 {
     public class ClientPlayerManager
     {
@@ -65,11 +63,23 @@ namespace KarlsonMultiplayer.Shared
     {
         public static Dictionary<ushort, ServerPlayer> List { get; set; } = new Dictionary<ushort, ServerPlayer>();
         
-        public static void Spawn(ushort id, string username)
+        public static ServerPlayer FindPlayerByName(string name)
+        {
+            foreach (var player in List)
+            {
+                if (player.Value.username.Equals(name))
+                    return player.Value;
+            }
+
+            return null;
+        }
+        
+        public static void Spawn(ushort id, string username, ServerClient sClient)
         {
             ServerPlayer player = new ServerPlayer {username = username, id = id};
 
             player.SendSpawn();
+            player.serverClient = sClient;
             List.Add(player.id, player);
             UnityEngine.Debug.Log("Player " + username + " joined with the id " + id);
         }

@@ -11,10 +11,18 @@
         <e p="Multiplayer" t="Include">
           <e p="Client" t="Include">
             <e p="ClientPlayer.cs" t="Include" />
+            <e p="PrefabManagerMP.cs" t="Include" />
           </e>
           <e p="MessageExtensions.cs" t="Include" />
           <e p="NetworkManager.cs" t="Include" />
           <e p="Server" t="Include">
+            <e p="Command" t="Include">
+              <e p="Command.cs" t="Include" />
+              <e p="CommandManager.cs" t="Include" />
+              <e p="commands" t="Include">
+                <e p="ChangeVelocity.cs" t="Include" />
+              </e>
+            </e>
             <e p="ServerPlayer.cs" t="Include" />
           </e>
           <e p="Shared" t="Include">

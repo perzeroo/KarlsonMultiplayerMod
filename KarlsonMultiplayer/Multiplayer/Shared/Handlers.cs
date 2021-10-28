@@ -1,11 +1,8 @@
-﻿using System.Collections.Generic;
-using KarlsonMultiplayer.Multiplayer;
-using KarlsonMultiplayer.Multiplayer.Server;
-using RiptideNetworking;
+﻿using RiptideNetworking;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace KarlsonMultiplayer.Shared
+namespace KarlsonMultiplayer
 {
     public class ServerHandlers
     {
@@ -14,7 +11,7 @@ namespace KarlsonMultiplayer.Shared
         [MessageHandler((ushort) ClientToServerId.playerName)]
         public static void PlayerName(ServerClient fromClient, Message message)
         {
-            ServerPlayerManager.Spawn(fromClient.Id, message.GetString());
+            ServerPlayerManager.Spawn(fromClient.Id, message.GetString(), fromClient);
         }
 
         [MessageHandler((ushort) ClientToServerId.playerPosRot)]
@@ -59,6 +56,17 @@ namespace KarlsonMultiplayer.Shared
             if (ServerPlayerManager.List.TryGetValue(fromClient.Id, out var player))
             {
                 player.SetCrouchStateAndSend(message.GetBool());
+            }
+        }
+
+        [MessageHandler((ushort) ClientToServerId.sendChatMessage)]
+        public static void SendChatMessage(ServerClient fromClient, Message message)
+        {
+            string chatMessage = message.GetString();
+
+            if (chatMessage.StartsWith("/"))
+            {
+                CommandManager.instance.HandleCommand(chatMessage);
             }
         }
         
@@ -110,11 +118,8 @@ namespace KarlsonMultiplayer.Shared
                     Main.instance.DestroyObject(player.weaponObject);
                     return;
                 }
-
-                if (SceneManager.GetActiveScene().name.Equals(player.currentLoadedScene))
-                {
-                    player.SpawnWeapon();
-                }
+                
+                player.SpawnWeapon();
             }
                 
         }
@@ -174,6 +179,12 @@ namespace KarlsonMultiplayer.Shared
             {
                 player.Crouch(crouchState);
             }
+        }
+
+        [MessageHandler((ushort) ServerToClientId.playerVelocity)]
+        public static void PlayerVelocity(Message message)
+        {
+            PlayerMovement.Instance.rb.velocity = message.GetVector3();
         }
     }
 }

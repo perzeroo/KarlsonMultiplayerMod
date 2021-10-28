@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Reflection;
 using BepInEx;
 using HarmonyLib;
-using KarlsonMultiplayer.Multiplayer;
-using KarlsonMultiplayer.Shared;
 using RiptideNetworking;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -23,6 +20,7 @@ namespace KarlsonMultiplayer
 
         private string ip = "127.0.0.1";
         private string port = "8001";
+        private string name = Environment.MachineName;
         private readonly GameObject serverGameObject = new GameObject("ServerNetworkManager");
         private GameObject serverNetworkObject;
 
@@ -30,6 +28,9 @@ namespace KarlsonMultiplayer
         
         private readonly GameObject uiManagerObject = new GameObject("UIManager");
         private GameObject uiManager;
+        
+        private readonly GameObject prefabManagerObject = new GameObject("PrefabManager");
+        private GameObject prefabManager;
 
         private void Awake()
         {
@@ -51,18 +52,34 @@ namespace KarlsonMultiplayer
 
             serverNetworkObject = Instantiate(serverGameObject, Vector3.zero, Quaternion.identity);
             serverNetworkObject.AddComponent<ServerNetworkManager>();
+            serverNetworkObject.AddComponent<CommandManager>();
 
             uiManager = Instantiate(uiManagerObject, Vector3.zero, Quaternion.identity);
             uiManager.AddComponent<UI.UI>();
+            
+            prefabManager = Instantiate(prefabManagerObject, Vector3.zero, Quaternion.identity);
 
             DontDestroyOnLoad(clientNetworkObject);
             DontDestroyOnLoad(serverNetworkObject);
             DontDestroyOnLoad(uiManager);
+            DontDestroyOnLoad(prefabManager);
         }
 
-        public static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             UnityEngine.Debug.Log("Changing Scenes... Current Scene: " + scene.name);
+
+            if (!PrefabManagerMP.instance)
+            {
+                if (!scene.name.Equals("0Tutorial"))
+                {
+                    SceneManager.LoadScene("0Tutorial");
+                }
+                else
+                {
+                    prefabManager.AddComponent<PrefabManagerMP>();
+                }
+            } 
             
             Message message = Message.Create(MessageSendMode.reliable, (ushort)ClientToServerId.loadScene);
             message.Add(scene.name);
@@ -115,11 +132,15 @@ namespace KarlsonMultiplayer
 
         private void OnGUI()
         {
+            if (ClientNetworkManager.Singleton.Client.IsConnected) return;
+            
             ip = GUILayout.TextField(ip);
             port = GUILayout.TextField(port);
+            name = GUILayout.TextField(name);
 
             ClientNetworkManager.Singleton.ip = ip;
             ClientNetworkManager.Singleton.port = ushort.Parse(port);
+            ClientNetworkManager.Singleton.name = name;
             ServerNetworkManager.Singleton.port = ushort.Parse(port);
 
             if (GUILayout.Button("Connect")) ClientNetworkManager.Singleton.Connect();

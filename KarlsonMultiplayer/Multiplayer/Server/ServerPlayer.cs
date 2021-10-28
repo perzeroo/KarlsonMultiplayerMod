@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using RiptideNetworking;
+﻿using RiptideNetworking;
 using UnityEngine;
 
-namespace KarlsonMultiplayer.Multiplayer.Server
+namespace KarlsonMultiplayer
 {
     public class ServerPlayer
     {
@@ -11,6 +10,8 @@ namespace KarlsonMultiplayer.Multiplayer.Server
 
         public ushort id { get; set; }
         public string username { get; set; }
+
+        public ServerClient serverClient;
 
         public string currentLevel = "MainMenu";
 

@@ -1,7 +1,7 @@
 ﻿using RiptideNetworking;
 using UnityEngine;
 
-namespace KarlsonMultiplayer.Multiplayer
+namespace KarlsonMultiplayer
 {
     public static class MessageExtensions
     {

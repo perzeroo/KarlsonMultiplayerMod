@@ -1,10 +1,7 @@
-﻿using System.Collections.Generic;
-using KarlsonMultiplayer.Shared;
-using RiptideNetworking;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace KarlsonMultiplayer.Multiplayer.Client
+namespace KarlsonMultiplayer
 {
     public class ClientPlayer
     {
@@ -48,6 +45,8 @@ namespace KarlsonMultiplayer.Multiplayer.Client
 
         public void RemovePlayer()
         {
+            UnityEngine.Debug.Log("Player removed");
+            
             Main.instance.DestroyObject(playerObject);
             ClientPlayerManager.List.Remove(id);
         }
@@ -59,8 +58,21 @@ namespace KarlsonMultiplayer.Multiplayer.Client
 
         public void SpawnWeapon()
         {
-            weaponObject = Main.instance.SpawnObject(GameObject.Find(currentWeapon));
+            GameObject weaponGo = new GameObject("weapon");
+
+            foreach (var go in PrefabManagerMP.instance.prefabs)
+            {
+                if (go.name.Equals(currentWeapon + " [Prefab]"))
+                {
+                    weaponGo = go;
+                    break;
+                }
+            }
+
+            weaponObject = Main.instance.SpawnObject(weaponGo);
             Main.instance.DestroyObject(weaponObject.GetComponent<Rigidbody>());
+            
+            weaponObject.SetActive(true);
             
             weaponObject.GetComponent<RangedWeapon>().PickupWeapon(false);
         }
