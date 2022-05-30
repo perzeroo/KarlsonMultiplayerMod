@@ -20,26 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56bc64de-ec3d-43e8-94c8-22471ea7cd85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/PrefabManagerMP.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Command/Command.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Command/CommandManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/Command/Commands/ChangeVelocity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.KarlsonMultiplayer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KarlsonMultiplayer/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KarlsonMultiplayer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KarlsonMultiplayer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/KarlsonMultiplayer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/KarlsonMultiplayer.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/ClientPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Client/ClientPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/MessageExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/MessageExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/NetworkManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/ServerPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Server/ServerPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/Handlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/Handlers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/PlayerManagers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/Multiplayer/Shared/PlayerManagers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/UI/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/UI/UI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/KarlsonMultiplayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/KarlsonMultiplayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/KarlsonMultiplayer.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/KarlsonMultiplayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/bin/Debug/net48/KarlsonMultiplayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.csprojAssemblyReference.cache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/Debug/net48/KarlsonMultiplayer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/KarlsonMultiplayer.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/KarlsonMultiplayer.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/KarlsonMultiplayer.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/KarlsonMultiplayer.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/KarlsonMultiplayer.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/KarlsonMultiplayer.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KarlsonMultiplayer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/KarlsonMultiplayer/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +66,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86C03A06-2ADC-4935-BA17-5D49FD701C85/dd/24005d9f/Material.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86C03A06-2ADC-4935-BA17-5D49FD701C85/16/b17bc193/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/RudpSocket.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86C03A06-2ADC-4935-BA17-5D49FD701C85/6a/68b0fa44/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../RiptideNetworking/RiptideNetworking/RiptideNetworking/Client.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -164,6 +164,8 @@
       <workItem from="1634733138901" duration="16118000" />
       <workItem from="1634796942664" duration="27441000" />
       <workItem from="1634904100163" duration="25636000" />
+      <workItem from="1644516185708" duration="4541000" />
+      <workItem from="1653940286382" duration="2406000" />
     </task>
     <servers />
   </component>
@@ -188,29 +190,13 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="991" y="504" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1634749228638">
+    <state x="1129" y="578" key="Vcs.Push.Dialog.v2" timestamp="1653942412995">
       <screen x="0" y="0" width="3072" height="1698" />
     </state>
-    <state x="991" y="504" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634749228638" />
-    <state x="1129" y="581" key="Rider.ProjectTemplateDialog.Size" timestamp="1634999188546">
+    <state x="1129" y="578" key="Vcs.Push.Dialog.v2/0.0.3072.1698/3840.607.1920.1050@0.0.3072.1698" timestamp="1653942412995" />
+    <state x="1219" y="566" width="634" height="566" key="find.popup" timestamp="1653940655602">
       <screen x="0" y="0" width="3072" height="1698" />
     </state>
-    <state x="1129" y="581" key="Rider.ProjectTemplateDialog.Size/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634999188546" />
-    <state x="1045" y="494" key="SettingsEditor" timestamp="1634904134451">
-      <screen x="0" y="0" width="3072" height="1698" />
-    </state>
-    <state x="1045" y="494" key="SettingsEditor/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634904134451" />
-    <state x="1219" y="424" width="634" height="849" key="find.popup" timestamp="1634986290195">
-      <screen x="0" y="0" width="3072" height="1698" />
-    </state>
-    <state x="1219" y="424" width="634" height="849" key="find.popup/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634986290195" />
-    <state x="1193" y="405" key="run.anything.popup" timestamp="1634749095516">
-      <screen x="0" y="0" width="3072" height="1698" />
-    </state>
-    <state x="1193" y="405" key="run.anything.popup/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634749095516" />
-    <state x="1199" y="390" width="672" height="678" key="search.everywhere.popup" timestamp="1634922826610">
-      <screen x="0" y="0" width="3072" height="1698" />
-    </state>
-    <state x="1199" y="390" width="672" height="678" key="search.everywhere.popup/0.0.3072.1698/-1920.590.1920.1050@0.0.3072.1698" timestamp="1634922826610" />
+    <state x="1219" y="566" width="634" height="566" key="find.popup/0.0.3072.1698/3840.607.1920.1050@0.0.3072.1698" timestamp="1653940655602" />
   </component>
 </project>

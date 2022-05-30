@@ -7,46 +7,49 @@
 
     <ItemGroup>
       <Reference Include="0Harmony, Version=2.5.5.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Development\Unity\BepInEx 5.4.17\0Harmony.dll</HintPath>
+        <HintPath>..\..\..\Desktop\Games\Karlson\BepInEx\core\0Harmony.dll</HintPath>
       </Reference>
       <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Development\Unity\Karlson\Assembly-CSharp_publicized.dll</HintPath>
+        <HintPath>..\..\..\Desktop\Unity Development\Karlson\Assembly-CSharp_publicized.dll</HintPath>
       </Reference>
       <Reference Include="BepInEx, Version=5.4.17.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Development\Unity\BepInEx 5.4.17\BepInEx.dll</HintPath>
+        <HintPath>..\..\..\Desktop\Games\Karlson\BepInEx\core\BepInEx.dll</HintPath>
       </Reference>
       <Reference Include="BepInEx.Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Development\Unity\BepInEx 5.4.17\BepInEx.Harmony.dll</HintPath>
+        <HintPath>..\..\..\Desktop\Games\Karlson\BepInEx\core\BepInEx.Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="KarlsonLevelImporter, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\Desktop\Games\Karlson\BepInEx\plugins\KarlsonLevelImporter.dll</HintPath>
       </Reference>
       <Reference Include="RiptideNetworking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>..\..\RiptideNetworking-BepInEx\RiptideNetworking\RiptideNetworking\bin\Debug\netstandard2.0\net48\RiptideNetworking.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Development\Unity\Karlson\UnityEngine.dll</HintPath>
+        <HintPath>..\..\..\Desktop\Unity Development\Karlson\UnityEngine.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Development\Unity\Karlson\UnityEngine.CoreModule.dll</HintPath>
+        <HintPath>..\..\..\Desktop\Unity Development\Karlson\UnityEngine.CoreModule.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Development\Unity\Karlson\UnityEngine.IMGUIModule.dll</HintPath>
+        <HintPath>..\..\..\Desktop\Unity Development\Karlson\UnityEngine.IMGUIModule.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Development\Unity\Karlson\UnityEngine.InputLegacyModule.dll</HintPath>
+        <HintPath>..\..\..\Desktop\Unity Development\Karlson\UnityEngine.InputLegacyModule.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Development\Unity\Karlson\UnityEngine.PhysicsModule.dll</HintPath>
+        <HintPath>..\..\..\Desktop\Unity Development\Karlson\UnityEngine.PhysicsModule.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Development\Unity\Karlson\UnityEngine.TextCoreModule.dll</HintPath>
+        <HintPath>..\..\..\Desktop\Unity Development\Karlson\UnityEngine.TextCoreModule.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Development\Unity\Karlson\UnityEngine.TextRenderingModule.dll</HintPath>
+        <HintPath>..\..\..\Desktop\Unity Development\Karlson\UnityEngine.TextRenderingModule.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Development\Unity\Karlson\UnityEngine.UI.dll</HintPath>
+        <HintPath>..\..\..\Desktop\Unity Development\Karlson\UnityEngine.UI.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Development\Unity\Karlson\UnityEngine.UIModule.dll</HintPath>
+        <HintPath>..\..\..\Desktop\Unity Development\Karlson\UnityEngine.UIModule.dll</HintPath>
       </Reference>
     </ItemGroup>
 

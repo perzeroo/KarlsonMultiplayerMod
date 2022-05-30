@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Reflection;
 using BepInEx;
 using HarmonyLib;
@@ -78,8 +79,11 @@ namespace KarlsonMultiplayer
                 else
                 {
                     prefabManager.AddComponent<PrefabManagerMP>();
+                    SceneManager.LoadScene(0);
                 }
             } 
+            
+            if(mode == LoadSceneMode.Additive) return;
             
             Message message = Message.Create(MessageSendMode.reliable, (ushort)ClientToServerId.loadScene);
             message.Add(scene.name);
@@ -95,6 +99,7 @@ namespace KarlsonMultiplayer
             if (PlayerMovement.Instance)
             {
                 SendPositionData();
+                print("sending pos");
 
                 if (PlayerMovement.Instance.HasGun())
                 {

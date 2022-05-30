@@ -11,7 +11,6 @@ C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\n
 C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\UnityEngine.UI.dll
 C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\UnityEngine.UIModule.dll
 C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\RiptideNetworking.xml
-C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\obj\Debug\net48\KarlsonMultiplayer.csprojAssemblyReference.cache
 C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\obj\Debug\net48\KarlsonMultiplayer.AssemblyInfoInputs.cache
 C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\obj\Debug\net48\KarlsonMultiplayer.AssemblyInfo.cs
 C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\obj\Debug\net48\KarlsonMultiplayer.csproj.CoreCompileInputs.cache
@@ -23,3 +22,13 @@ C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\n
 C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\UnityEngine.TextCoreModule.dll
 C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\UnityEngine.TextRenderingModule.dll
 C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\UnityEngine.InputLegacyModule.dll
+C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\Mono.Cecil.dll
+C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\MonoMod.Utils.dll
+C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\0Harmony.xml
+C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\BepInEx.xml
+C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\BepInEx.Harmony.xml
+C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\MonoMod.Utils.xml
+C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\obj\Debug\net48\KarlsonMultiplayer.csproj.AssemblyReference.cache
+C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\obj\Debug\net48\KarlsonMultiplayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\KarlsonLevelImporter.dll
+C:\Users\p3rz3r0\RiderProjects\KarlsonMultiplayer\KarlsonMultiplayer\bin\Debug\net48\Newtonsoft.Json.dll
